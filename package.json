@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/EggNao/zenn-content#readme",
   "dependencies": {
+    "textlint": "^12.2.2",
     "zenn-cli": "^0.1.131"
   }
 }
