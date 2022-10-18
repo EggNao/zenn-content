@@ -1,5 +1,5 @@
 ---
-title: "キャッシュDNSサーバ構築（Ubuntu 20.04）"
+title: "DNSキャッシュサーバ構築（Ubuntu 20.04）"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["DNS", "Bind", "Ubuntu"]
