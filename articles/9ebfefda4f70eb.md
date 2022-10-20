@@ -2,7 +2,7 @@
 title: "DNSキャッシュサーバ構築（Ubuntu 20.04）"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["DNS", "Bind", "Ubuntu"]
+topics: ["DNS", "Bind", "Ubuntu", server]
 published: false
 ---
 
@@ -147,7 +147,7 @@ $ sudo systemctl restart named
 $ sudo systemctl status named
 ```
 
-自分の場合はここで失敗しており，エラーログを確認すると，ログファイルを生成するディレクトリに権限がなかったようです，もしエラーが出た場合は`chmod`で権限を付与してください．
+自分の場合はここで失敗しており，エラーログを確認すると，ログファイルを生成するディレクトリに権限がなかったようです，もしエラーが出た場合は`chmod`でパーミッションを変更してください．
 そして権限を付与したらもう一度 service を restart してみてください．
 
 ```
