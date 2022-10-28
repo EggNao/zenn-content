@@ -31,13 +31,13 @@ Address: 216.58.220.99
 例えば`kyushu-u.ac.jp`というドメインを考えてみましょう．`kyushu-u`は固有のドメインを示しています．また`ac`は「academic（学術的な）」という意味で大学や高専などの高等教育機関を，`jp`は「japan（日本）」を示しております．
 他にも`com`は「commercial（商業組織用）」や`go`は「government（政府）」などがあります．
 このドメインの構造が DNS での名前解決の流れに大きく関わってきます．
-![](/images/9ebfefda4f70eb_image1.png)
+![](/images/9ebfefda4f70eb_dns_architecture.png)
 
 # DNS の構造
 
 DNS サーバには大きく分けて DNS キャッシュサーバ（リゾルバ）と権威 DNS サーバ（ネームサーバ）です．下図を見ながら説明していきます．
 
-![](/images/9ebfefda4f70eb_image3.png)
+![](/images/9ebfefda4f70eb_dns_architecture.png)
 
 １．まずクライアントがキャッシュサーバに問い合わせを行います．（ここでは`google.com`とします）
 ２．キャッシュサーバはルートサーバへ`google.com`の IP アドレスを問い合わせます．
@@ -159,7 +159,7 @@ active と表示されたら成功です！
 それでは クライアント PC から DNS キャッシュサーバにアクセスしてみましょう．
 その前に構築した DNS サーバの IP アドレスを確認(`ifconfig`or`ip address`)．私の場合は`172.16.4.103`だったので macbook で指定してみます．
 環境設定のネットワークから WiFi(もしくわ有線)の詳細を選択すると下記画面が表示される．左下の`+`ボタンから`172.16.4.103`を入力し適用．
-![](/images/9ebfefda4f70eb_image2.png)
+![](/images/9ebfefda4f70eb_setting_network.png)
 
 そうするとクライアント PC から構築した DNS キャッシュサーバへ向けることができます．
 念の為，macbook で`nslookup`を実行しておきます．
