@@ -31,7 +31,7 @@ Address: 216.58.220.99
 例えば`kyushu-u.ac.jp`というドメインを考えてみましょう．`kyushu-u`は固有のドメインを示しています．また`ac`は「academic（学術的な）」という意味で大学や高専などの高等教育機関を，`jp`は「japan（日本）」を示しております．
 他にも`com`は「commercial（商業組織用）」や`go`は「government（政府）」などがあります．
 このドメインの構造が DNS での名前解決の流れに大きく関わってきます．
-![](/images/9ebfefda4f70eb_dns_architecture.png)
+![](/images/9ebfefda4f70eb_domain_tree.png)
 
 # DNS の構造
 
